@@ -1,86 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+{
 
-body {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('logo.png') no-repeat center center;
-  background-size: cover;
-  text-align: center;
-  color: white;
-}
-
-/* HEADER */
 header {
   padding: 30px 20px;
 }
 
 header img {
-  width: 180px;
+  width: 150px;
 }
 
 h1 {
-  color: #ff7a00;
   margin-top: 15px;
+  color: #ff7a00;
 }
 
 p {
-  color: #f1f1f1;
+  margin-top: 10px;
 }
 
-/* CONTAINER */
-.container {
+main {
   padding: 20px;
 }
 
-/* BOTÃO */
-.btn {
-  display: inline-block;
+#mainBtn {
   margin-top: 20px;
-  padding: 15px 25px;
+  padding: 15px 30px;
   background: #25D366;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 10px;
+  border: none;
+  border-radius: 8px;
   font-size: 18px;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
-.btn:hover {
+#mainBtn:hover {
   background: #1ebe5d;
 }
 
-/* CÓDIGOS */
 .codes {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
-.code-box {
+.code {
   display: inline-block;
-  background: rgba(255,255,255,0.1);
-  padding: 15px;
   margin: 10px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
+  padding: 15px 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.2);
+  font-weight: bold;
 }
 
-.code-box:hover {
-  background: rgba(255,255,255,0.2);
-  transform: scale(1.05);
+.code:hover {
+  background: rgba(255,255,255,0.3);
 }
 
-/* FOOTER */
 footer {
   margin-top: 40px;
-  padding: 15px;
-  background: rgba(0,0,0,0.5);
-  font-size: 14px;
+  padding: 10px;
 }
