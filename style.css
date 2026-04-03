@@ -1,8 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
   height: 100vh;
-  margin: 0;
-  background-image: url("fundo.jpg");
-  background-color: red; /* só pra testar */
+
+  /* FUNDO COM IMAGEM */
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("fundo.jpg");
+
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CONTEÚDO CENTRAL */
+.container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+/* TÍTULO */
+h1 {
+  color: #ff7a00;
+  font-size: 30px;
+}
+
+/* BOTÃO */
+#btn {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
 }

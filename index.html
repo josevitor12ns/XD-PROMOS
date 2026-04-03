@@ -5,67 +5,20 @@
   <title>XD Promos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-
-  body {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('data:image/png;base64,{{BASE64_AQUI}}') no-repeat center center;
-    background-size: cover;
-  }
-
-  .container {
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-  }
-
-  h1 {
-    color: #ff7a00;
-    font-size: 26px;
-  }
-
-  #btn {
-    margin-top: 30px;
-    padding: 15px 40px;
-    background: #25D366;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  #btn:hover {
-    background: #1ebe5d;
-    transform: scale(1.05);
-  }
-  </style>
+  <!-- CONECTA O CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <div class="container">
-    <h1>🔥 ACESSO EXCLUSIVO 🔥</h1>
+    <h1>🔥 ENTRE NO GRUPO 🔥</h1>
+
     <button id="btn">ENTRAR AGORA</button>
   </div>
 
-  <script>
-    const link = "https://chat.whatsapp.com/BANoptNMU767N8FTr0TzpJ?mode=gi_t";
-
-    document.getElementById("btn").addEventListener("click", function() {
-      window.location.href = link;
-    });
-  </script>
+  <!-- CONECTA O JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>
