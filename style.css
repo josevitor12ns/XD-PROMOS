@@ -8,16 +8,16 @@
 body {
   height: 100vh;
 
-  /* FUNDO COM IMAGEM */
+  /* IMAGEM AJUSTADA (SOLUÇÃO 1) */
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url("fundo.jpg");
 
-  background-size: cover;
-  background-position: center;
+  background-size: cover;       /* mantém proporção */
+  background-position: center;  /* centraliza */
   background-repeat: no-repeat;
 }
 
-/* CONTEÚDO CENTRAL */
+/* CONTAINER CENTRAL */
 .container {
   position: relative;
   top: 50%;
