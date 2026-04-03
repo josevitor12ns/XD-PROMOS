@@ -2,39 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 body {
   height: 100vh;
-  background: url('logo.png') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
+/* camada escura */
 .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
 }
 
+/* conteúdo central */
 .container {
   position: relative;
   z-index: 1;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
+  padding: 20px;
 }
 
+/* logo */
 .logo {
-  width: 200px;
+  width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
+/* título */
 h1 {
-  color: white;
+  color: #ff7a00;
   margin-top: 20px;
+  font-size: 24px;
 }
 
+/* texto */
+p {
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* botão */
 #btn {
   margin-top: 30px;
   padding: 15px 40px;
@@ -42,10 +56,12 @@ h1 {
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 #btn:hover {
   background: #1ebe5d;
+  transform: scale(1.05);
 }
