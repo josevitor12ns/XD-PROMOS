@@ -4,22 +4,68 @@
   <meta charset="UTF-8">
   <title>XD Promos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('data:image/png;base64,{{BASE64_AQUI}}') no-repeat center center;
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  h1 {
+    color: #ff7a00;
+    font-size: 26px;
+  }
+
+  #btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+  }
+  </style>
 </head>
+
 <body>
 
-  <div class="overlay"></div>
-
   <div class="container">
-    <!-- IMAGEM EMBUTIDA (SEM PRECISAR DE ARQUIVO) -->
-    <img src="data:image/png;base64,INSIRA_AQUI_SUA_IMAGEM_BASE64" class="logo">
-
-    <h1>🔥 ACESSO EXCLUSIVO A PROMOÇÕES 🔥</h1>
-    <p>Entre agora e receba as melhores ofertas todos os dias</p>
-
-    <button id="btn">ENTRAR NO GRUPO AGORA</button>
+    <h1>🔥 ACESSO EXCLUSIVO 🔥</h1>
+    <button id="btn">ENTRAR AGORA</button>
   </div>
 
-  <script src="script.js"></script>
+  <script>
+    const link = "https://chat.whatsapp.com/BANoptNMU767N8FTr0TzpJ?mode=gi_t";
+
+    document.getElementById("btn").addEventListener("click", function() {
+      window.location.href = link;
+    });
+  </script>
+
 </body>
 </html>
